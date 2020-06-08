@@ -59,3 +59,42 @@ test('Removes the first element of a Queue', () => {
   expect(first).toBe('A')
   expect(q.size()).toBe(2)
 })
+
+test('Successfully sets the max size of an empty Queue', () => {
+  const q = new Queue()
+  q.setMaxSize(10)
+  expect(q.maxSize).toBe(10)
+})
+
+test('Successfully increases the max size of a Queue', () => {
+  const q = new Queue(5)
+  q.enqueue('A')
+  q.enqueue('B')
+  q.enqueue('C')
+  q.enqueue('D')
+  q.enqueue('E')
+  q.setMaxSize(10)
+  expect(q.maxSize).toBe(10)
+})
+
+test('Successfully decreases the max size of a Queue', () => {
+  const q = new Queue(5)
+  q.enqueue('A')
+  q.enqueue('B')
+  q.enqueue('C')
+  q.enqueue('D')
+  q.setMaxSize(4)
+  expect(q.maxSize).toBe(4)
+  expect(q.isFull()).toBe(true)
+})
+
+test('Fails to decrease the max size of a Queue', () => {
+  const q = new Queue(5)
+  q.enqueue('A')
+  q.enqueue('B')
+  q.enqueue('C')
+  q.enqueue('D')
+  q.enqueue('E')
+  q.setMaxSize(4)
+  expect(q.maxSize).toBe(5)
+})
