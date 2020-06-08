@@ -70,7 +70,7 @@ class Stack {
    */
   setMaxSize (maxSize) {
     let result = false
-    if (maxSize === -1 || maxSize > this.size()) {
+    if (maxSize === -1 || maxSize >= this.size()) {
       result = true
       this.maxSize = maxSize
     }
@@ -78,4 +78,4 @@ class Stack {
   }
 }
 
-module.exports = Queue
+module.exports = Stack
