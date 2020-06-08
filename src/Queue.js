@@ -71,7 +71,7 @@ class Queue {
    */
   setMaxSize (maxSize) {
     let result = false
-    if (maxSize === -1 || maxSize > this.size()) {
+    if (maxSize === -1 || maxSize >= this.size()) {
       result = true
       this.maxSize = maxSize
     }
