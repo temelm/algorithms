@@ -1,0 +1,22 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temelm/algorithms.git"
+  },
+  "author": "Mustafa Temel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temelm/algorithms/issues"
+  },
+  "homepage": "https://github.com/temelm/algorithms#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}

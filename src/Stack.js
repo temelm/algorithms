@@ -77,3 +77,5 @@ class Stack {
     return result
   }
 }
+
+module.exports = Queue
