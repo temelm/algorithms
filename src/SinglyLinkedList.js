@@ -20,7 +20,8 @@ class SinglyLinkedList {
   }
 
   /**
-   * Returns the node at the specified index without removing it. Returns null if the specified index does not store a node.
+   * Returns the node at the specified index without removing it.
+   * Returns null if the specified index does not store a node.
    * @param {number} index
    * @returns {SinglyLinkedListNode|null}
    */
@@ -66,7 +67,8 @@ class SinglyLinkedList {
   }
 
   /**
-   * Removes the node at the specified index and returns its data. Returns null if the specified index does not store a node.
+   * Removes the node at the specified index and returns its data.
+   * Returns null if the specified index does not store a node.
    * @param {number} index
    * @returns {SinglyLinkedListNode|null}
    */

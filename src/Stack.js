@@ -34,7 +34,8 @@ class Stack {
   }
 
   /**
-   * Returns the last element in the stack without removing it. Returns undefined if the stack is empty.
+   * Returns the last element in the stack without removing it.
+   * Returns undefined if the stack is empty.
    * @returns {*|undefined}
    */
   peek () {
@@ -42,7 +43,8 @@ class Stack {
   }
 
   /**
-   * Adds the specified element to the end of the stack and returns true. Returns false if the addition fails.
+   * Adds the specified element to the end of the stack and returns true.
+   * Returns false if the addition fails.
    * @param {*} element
    * @returns {boolean}
    */
@@ -57,7 +59,8 @@ class Stack {
   }
 
   /**
-   * Removes and returns the last element in the stack. Returns undefined if the stack is empty.
+   * Removes and returns the last element in the stack.
+   * Returns undefined if the stack is empty.
    * @returns {*|undefined}
    */
   pop () {
@@ -71,7 +74,8 @@ class Stack {
   }
 
   /**
-   * Changes the size limit of the stack and returns true. Returns false if the change fails.
+   * Changes the size limit of the stack and returns true.
+   * Returns false if the change fails.
    * @param {number} maxSize
    * @returns {boolean}
    */
