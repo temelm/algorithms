@@ -11,6 +11,7 @@ class Queue {
   }
 
   /**
+   * Returns the number of elements in the queue.
    * @returns {number}
    */
   size () {
@@ -18,6 +19,7 @@ class Queue {
   }
 
   /**
+   * Checks whether the queue is empty.
    * @returns {boolean}
    */
   isEmpty () {
@@ -25,6 +27,7 @@ class Queue {
   }
 
   /**
+   * Checks whether the queue is full.
    * @returns {boolean}
    */
   isFull () {
@@ -32,6 +35,7 @@ class Queue {
   }
 
   /**
+   * Returns the first element in the queue without removing it. Returns undefined if the queue is empty.
    * @returns {*|undefined}
    */
   peek () {
@@ -39,6 +43,7 @@ class Queue {
   }
 
   /**
+   * Adds the specified element to the end of the queue and returns true. Returns false if the addition fails.
    * @param {*} element
    * @returns {boolean}
    */
@@ -53,6 +58,7 @@ class Queue {
   }
 
   /**
+   * Removes and returns the first element in the queue. Returns undefined if the queue is empty.
    * @returns {*|undefined}
    */
   dequeue () {
@@ -66,6 +72,7 @@ class Queue {
   }
 
   /**
+   * Changes the size limit of the queue and returns true. Returns false if the change fails.
    * @param {number} maxSize
    * @returns {boolean}
    */
